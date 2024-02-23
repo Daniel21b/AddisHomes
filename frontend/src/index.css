@@ -6,8 +6,40 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Header and Title Adjustments */
+.App-header h1 {
+  font-size: 2rem; /* Adjusted font size for space management */
+  margin-bottom: 0.5rem; /* Reduce margin to save space */
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navigation Link Styling */
+.App-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  gap: 20px; /* Space out the navigation items */
+}
+
+.App-nav a {
+  text-decoration: none;
+  color: #FFD700; /* Yellow color to match the theme */
+  font-weight: bold;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
+}
+
+/* FontAwesome icon and Construction Section Adjustments */
+.construction-worker {
+  font-size: 6rem; /* Adjust the icon size to manage space */
+  animation: workAnimation 2s ease-in-out infinite;
+  /* Other styles remain the same */
+}
+
+/* Adjustments for under-construction messaging for better space management */
+.under-construction h2, .under-construction p {
+  margin-top: 1rem;
+  /* Other styles remain the same */
 }

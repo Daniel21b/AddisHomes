@@ -1,34 +1,30 @@
 import React from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPersonDigging, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
     <div className="App">
-      <nav className="App-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#buy">Buy</a></li>
-          <li><a href="#rent">Rent</a></li>
-          <li><a href="#sell">Sell</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
       <header className="App-header">
-        <h1>Welcome to  Real Estate Platform</h1>
-        <p>Find your perfect home</p>
-      </header>
-      <section className="property-listing">
-        <h2>Featured Properties</h2>
-        <div className="properties">
-          {/* Placeholder for property cards */}
-          <div className="property-card">Property 1</div>
-          <div className="property-card">Property 2</div>
-          <div className="property-card">Property 3</div>
+        <div className="header-right">
+          <FontAwesomeIcon icon={faUserPlus} className="icon register-icon" />
         </div>
-      </section>
-      <footer className="App-footer">
-        <p>© 2024 Real Estate Platform. All rights reserved.</p>
-      </footer>
+      </header>
+      <div className="background-image">
+        <div className="search-container">
+          <h1>Real Estate, Apartments, Houses</h1>
+          <div className="search-box">
+            <input type="text" placeholder="What?" />
+            <input type="text" placeholder="Where?" />
+            <button type="submit">Search</button>
+          </div>
+        </div>
+        <div className="construction-notice">
+          <FontAwesomeIcon icon={faPersonDigging} className="construction-icon" />
+          <p>Addis Homes  Site is still Under Construction - We'll be operational soon. Stay tuned!</p>
+        </div>
+      </div>
     </div>
   );
 }
